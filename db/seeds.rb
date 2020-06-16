@@ -588,7 +588,7 @@ while x < drinks.length do
     
     puts "Creating ingredient"
     drinks[x][:ingredients].each do |ingredient|
-        Ingredient.create({name: ingredient, cocktail_id: y.id})
+        Ingredient.create({name: ingredient[:name], cocktail_id: y.id})
     end
     puts "Finished creating ingredient"
 
