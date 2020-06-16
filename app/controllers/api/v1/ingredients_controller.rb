@@ -6,4 +6,10 @@ class Api::V1::IngredientsController < ApplicationController
         render json: ingredient
     end
 
+    def show_name
+        ingredient = Ingredient.find(params[:id])
+
+        render json: ingredient, only: [:name]
+    end 
+
 end

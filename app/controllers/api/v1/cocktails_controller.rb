@@ -6,4 +6,10 @@ class Api::V1::CocktailsController < ApplicationController
         render json: cocktails, include: [:cocktail_ingredients, :ingredients], except: [:created_at, :updated_at]
     end
 
+    def show
+        cocktail = Cocktail.find(params[:id])
+
+        render json: cocktail, include: [:cocktail_ingredients, :ingredients], except: [:created_at, :updated_at]
+    end
+
 end
