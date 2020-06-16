@@ -12,4 +12,16 @@ class Api::V1::IngredientsController < ApplicationController
         render json: ingredient, only: [:name]
     end 
 
+    def create
+        ingredient = Ingredient.create(ingredient_params)
+
+        render json: ingredient, except: [:created_at, :updated_at]
+    end
+
+    private
+
+    def ingredient_params
+        params.require(:ingredient).permit(:name, :cocktail_id)
+    end
+
 end

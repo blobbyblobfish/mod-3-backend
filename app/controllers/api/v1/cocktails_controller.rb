@@ -12,4 +12,23 @@ class Api::V1::CocktailsController < ApplicationController
         render json: cocktail, include: [:ingredients], except: [:created_at, :updated_at]
     end
 
+    def create
+        cocktail = Cocktail.create(cocktail_params)
+
+        render json: cocktail, include: [:ingredients], except: [:created_at, :updated_at]
+    end
+
+    def destroy
+        cocktail = Cocktail.find(params[:id])
+
+        cocktail.destroy
+
+        render json: {}
+    end
+
+    private
+
+    def cocktail_params
+        params.require(:cocktail).permit(:name, :directions, :image_url)
+    end
 end
