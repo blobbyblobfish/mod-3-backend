@@ -18,6 +18,14 @@ class Api::V1::IngredientsController < ApplicationController
         render json: ingredient
     end
 
+    def destroy
+        ingredient = Cocktail.find(params[:id])
+
+        ingredient.destroy
+
+        render json: {}
+    end
+
     private
 
     def ingredient_params
