@@ -117,15 +117,6 @@ json = {
     {
      "name": "Garnish Nutmeg"
     },
-    {
-     "name": "Prep: 4 m"
-    },
-    {
-     "name": "Ready In: 4 m"
-    },
-    {
-     "name": "Yield: 1 servings"
-    }
    ],
    "instructions": "Separate eggs and beat yolks until creamy. Whip sugar into yolks. Beat whites until they stand in peaks, adding 1/2 cup additional sugar, if desired. Beat yolks and Makers Mark® Bourbon together. Add whites. Beat cream. Add cream and milk to mixture. Add nutmeg to taste, and garnish each cup with nutmeg. Makes approximately 24 servings.",
    "products": [
@@ -210,12 +201,6 @@ json = {
     {
      "name": "Garnish with Maraschino Cherries"
     },
-    {
-     "name": "Prep: 5 m"
-    },
-    {
-     "name": "Ready In: 5 m"
-    }
    ],
    "instructions": "Combine all ingredients over ice. Stir. Strain into chilled cocktail glass. Garnish with a maraschino cherry (served up, no ice).",
    "products": [
@@ -262,12 +247,6 @@ json = {
     {
      "name": "Nutmeg"
     },
-    {
-     "name": "Prep: 4 m"
-    },
-    {
-     "name": "Ready In: 4 m"
-    }
    ],
    "instructions": "Add ingredients to a punch bowl and stir. Slowly stir in orange juice concentrate as it melts. Add spices to taste, and garnish with orange slices.",
    "products": [

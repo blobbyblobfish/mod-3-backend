@@ -19,7 +19,7 @@ class Api::V1::IngredientsController < ApplicationController
     end
 
     def destroy
-        ingredient = Cocktail.find(params[:id])
+        ingredient = Ingredient.find(params[:id])
 
         ingredient.destroy
 
