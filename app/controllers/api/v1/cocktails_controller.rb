@@ -18,6 +18,13 @@ class Api::V1::CocktailsController < ApplicationController
         render json: cocktail, include: [:ingredients], except: [:created_at, :updated_at]
     end
 
+    def update
+        cocktail = Cocktail.find(params[:id])
+        cocktail.update(cocktail_params)
+
+        render json: cocktail, include: [:ingredients], except: [:created_at, :updated_at]
+    end
+
     def destroy
         cocktail = Cocktail.find(params[:id])
 

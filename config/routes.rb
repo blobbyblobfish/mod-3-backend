@@ -9,6 +9,8 @@ Rails.application.routes.draw do
       post '/cocktails', to: 'cocktails#create'
       post '/ingredients', to: 'ingredients#create'
 
+      patch '/cocktails/:id', to: 'cocktails#update'
+
       delete '/cocktails/:id', to: 'cocktails#destroy'
       delete '/ingredients/:id', to: 'ingredients#destroy'
       
